@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="testSuite">
+    <test name="test">
+        <classes>
+            #foreach($className in $classes)
+                <class name="$className" />
+            #end
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter" />
+    </listeners>
+
+</suite>
